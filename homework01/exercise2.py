@@ -1,6 +1,6 @@
-# this program creates three lists: the first with ten integers, the second with
-# the square of each integer, the third with the cube of each integer, and 
-# prints the results.
+# this program prints three lists: the first with ten integers, the second with
+# the squares of the integers in list 1, the third with the cubes of the
+# integers in list 1.
 
 def main():
 	list1 = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
