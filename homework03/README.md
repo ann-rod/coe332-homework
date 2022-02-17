@@ -16,6 +16,7 @@ This program performs a variety of unit tests on the functions from analyze_wate
 
 
  *turbidity_data.json*:
+ 
 This data file can be downloaded from https://raw.githubusercontent.com/wjallen/turbidity/main/turbidity_data.json using the 'wget' command in the terminal.
 
 
@@ -25,10 +26,15 @@ This data file can be downloaded from https://raw.githubusercontent.com/wjallen/
 ## Instructions:
 In order to successfully run this code, you must:
   **1.** Download this directory.
+  
   **2.** Download turbidity_data.json from the link above, making sure it's in the copy of this directory on your computer.
+  
   **3.** Optional: install pytest in order to use test_analyze_water.py
+  
   **4.** Run analyze_water.py
+  
   **5.** Optional: Run pytest to check for errors in analyze_water.py
+  
 
  ## Results:
 This programs prints the turbidity of the water sample data inputted as well as the amount of time it would take for the water to be safe for use if the turbidity is above a safe threshold. This information can be used to determine if and when
