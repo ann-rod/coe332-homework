@@ -16,7 +16,6 @@ This program performs a variety of unit tests on the functions from analyze_wate
 
 
  *turbidity_data.json*:
- 
 This data file can be downloaded from https://raw.githubusercontent.com/wjallen/turbidity/main/turbidity_data.json using the 'wget' command in the terminal.
 
 
@@ -25,6 +24,7 @@ This data file can be downloaded from https://raw.githubusercontent.com/wjallen/
 
 ## Instructions:
 In order to successfully run this code, you must:
+
   **1.** Download this directory.
   
   **2.** Download turbidity_data.json from the link above, making sure it's in the copy of this directory on your computer.
