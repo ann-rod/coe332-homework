@@ -5,22 +5,26 @@ The code within this directory writes a summary of calculations made from a mete
 
 ## Files:
 **ml_data_analysis.py**:
+
 -Reads in data from *Meteorite_Landings.json*.
 -Calculates the amount of meteorites in the set, where they landed, and the class of each meteorite.
 -Prints a summary message of the data that contains the calculations mentioned above.
 
 
 **test_ml_data_analysis.py**:
+
 -A series of tests done on each function of *ml_data_analysis.py* to make sure everything is running correctly.
 -Requires installation of pytest.
 
 
 **Meteorite_Landings.json**:
+
 -A data file that contains a dictionary with a key of 'meteorite_landings' that contains a list of dictionaries filled with data on a particular meteorite landing.
 -Each dictionary entry represents a meteorite and includes its name, ID, class, mass, latitude, longitude, and GeoLocation.
 
 
 **Dockerfile**:
+
 -Contains the information necessary to create a container that successfully runs this code.
 
 
@@ -28,6 +32,7 @@ The code within this directory writes a summary of calculations made from a mete
 ## How to Run this Code:
 
 **Using an existing image on Docker Hub:**
+
 (To run this code using the image that has already been created.)
 -Download the application by typing into the command line 'docker pull annrod/ml_data_analysis:hw04'
 -Run the application using the command 'docker run --rm -it annrod/ml_data_analysis:hw04 /bin/bash'
@@ -40,6 +45,7 @@ python3 ml_data_analysis.py Meteor_Landings.json
 
 
 **Building a New Image from a Dockerfile:**
+
 -Download the code in this directory.
 -Open up *Dockerfile* using your text editor of choice and make the necessary changes.
 -Build a new image by typing 'docker build -t username/ml_data_analysis:hw04 .' in the command line.
@@ -53,14 +59,17 @@ python3 ml_data_analysis.py Meteor_Landings.json
 
 
 **Run with sample data (Meteorite_Landings.py):**
+
 -To use with the sample data, run either set of instructions above.
 
 
 **Run with your own data:**
+
 -
 
 
 **Run tests using pytest:**
+
 -Download the application using any of the methods above.
 -Once in the python interactive mode, make sure that pytest is installed by typing 'pytest --version'. If there are no error messages pytest installed properly.
 -Make sure you are in the 'code' directory by typing 'cd ~/code/'. Make sure the files listed above are in your current directory (you can check by using the commands 'ls').
