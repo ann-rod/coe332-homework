@@ -93,11 +93,10 @@ test_ml_data_analysis.py ......                                                 
 ~~~~
 
 
-##Input Data:
+#Input Data:
 The data used in this program can be found at: https://raw.githubusercontent.com/wjallen/coe332-sample-data/main/ML_Data_Sample.json
 
-For this code to work, data should be in a .json file in the format of a dictionary that holds a list or dictionaries with the meteorite data.
-ex:
+For this code to work, data should be in a .json file in the format of a dictionary that holds a list or dictionaries with the meteorite data. Below is a section of the data file used with this code:
 ~~~~
 {
   "meteorite_landings": [
