@@ -11,16 +11,19 @@ The code within this directory writes a summary of calculations made from a mete
 -Prints a summary message of the data that contains the calculations mentioned above.
 
 
+
 **test_ml_data_analysis.py**:
 
 -A series of tests done on each function of *ml_data_analysis.py* to make sure everything is running correctly.
 -Requires installation of pytest.
 
 
+
 **Meteorite_Landings.json**:
 
 -A data file that contains a dictionary with a key of 'meteorite_landings' that contains a list of dictionaries filled with data on a particular meteorite landing.
 -Each dictionary entry represents a meteorite and includes its name, ID, class, mass, latitude, longitude, and GeoLocation.
+
 
 
 **Dockerfile**:
