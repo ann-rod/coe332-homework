@@ -24,6 +24,9 @@ wget https://raw.githubusercontent.com/wjallen/coe332-sample-data/main/ML_Data_S
     - '-d' runs the portal in the background.
     - '-p 6426:6379' specifies which of your local ports (here we used 6424) will connect to the default container port (6379).
     - '-v $(pwd)/data:/data:rw' this section mounts the current directory into the container to be edited by the database in read/write (rw) mode. The '-v' flag indicates that you wish to mount a directory, and what follows is the local path you wish to mount. Notice that we added '/data' at the end to allow the database to create a data folder to add to.
+    - '--name=<username>-redis' allows the user to name the server so that it is easier to locate.
+    - 'redis:6' refers to the default image of the redis database that Docker contains.
+    - '--save 1 1' tells the database to store its backups at a rate of 1 backup every 1 second, respectively. These backups will save to the data folder that we allowed the database to create.
     
 
 ## Dockerfile
@@ -45,4 +48,15 @@ docker build -t docker build -t <username>/app.py:latest .
 docker docker run --name "<name your container>" -d -p 5024:5000 <username>/app.py:latest
 ~~~~
 
+ ## Using the App 
+ 
+ The app contains to methods:
+ 
+ **POST**: send the meteorite landing data into the database.
+ Command:
+ 
+ ~~~
+ curl localhost:5024/data -X POST
+ ~~~
+ 
 
