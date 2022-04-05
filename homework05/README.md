@@ -53,10 +53,19 @@ docker docker run --name "<name your container>" -d -p 5024:5000 <username>/app.
  The app contains to methods:
  
  **POST**: send the meteorite landing data into the database.
+ 
  Command:
  
  ~~~
  curl localhost:5024/data -X POST
  ~~~
  
+ 
+ **GET**: retrieve the data in the database as a list.
+ 
+ Command:
+ 
+ ~~~
+ curl localhost:5024/data GET
+ ~~~
 
