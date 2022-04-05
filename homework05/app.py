@@ -6,9 +6,25 @@ import redis
 app = Flask(__name__)
 
 @app.route('/data', methods = ['GET', 'POST'])
-def data(search_start = 0):
+def data(search_start = 0: int) -> str:
     '''
+    This app contains two methods that allow the user to post or retrive data, respectively,
+    from a redis database server.
+
+    METHODS:
+        POST: Posts the ML_Data_sample.json data into the database as a hash.
+        GET: Returns the data stored in the database as a json list.
     
+    Args:
+        search_start (int): An integer that indicates the index at which the user wishes
+                            to begin retrieval of data. Defaults to 0 if unspecified.
+
+    Returns:
+        POST method:
+            string (str): A confirmation message if the posting process runs successfully.
+        
+        GET method:
+            list (list): A json list with the meteorite landing data. 
     '''
     if(request.method == 'POST'):
         counter = 0
