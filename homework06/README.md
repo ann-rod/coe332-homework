@@ -39,7 +39,7 @@ This will show all the services open in the cluster. Find the one that says 'fla
 Now, you can use the app methods by typing:
 ~~~
 curl <IP Address>:5000/<method>
-~~
+~~~
 In the example above, the '5000' stands for the port number of the Flask app. If you cannot connect to the app, you will have to open the .yml file of the flask service and find the port number listed.
 
 To find the methods that can be used with this app, see my Flask app repository [here](https://github.com/ann-rod/coe332-homework/tree/main/homework05).
