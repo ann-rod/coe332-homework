@@ -1,0 +1,31 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-annrod-test-redis-deployment
+  labels:
+    app: app-annrod-test-redis-deployment
+    username: ann_rod
+    env: test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: annrod-test-redis
+  template:
+    metadata:
+      labels:
+        app: annrod-test-redis
+        username: ann_rod
+        env: test
+    spec:
+      containers:
+        - name: annrod-test-redis
+          image: redis:6
+          volumeMounts:
+          - name: app-annrod-test-redis-pvc-data
+            mountPath: "/data"
+      volumes:
+      - name: app-annrod-test-redis-pvc-data
+        persistentVolumeClaim:
+          claimName: app-annrod-test-redis-pvc-data

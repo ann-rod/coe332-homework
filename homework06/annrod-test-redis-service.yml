@@ -1,0 +1,17 @@
+piVersion: v1
+kind: Service
+metadata:
+  name: app-annrod-test-redis-service
+  labels:
+    username: ann_rod
+    env: test
+spec:
+  type: ClusterIP
+  selector:
+    app: annrod-test-redis
+    username: ann_rod
+    env: test
+  ports:
+  - name: helloflask
+    port: 6379
+    targetPort: 6379

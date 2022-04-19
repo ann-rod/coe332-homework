@@ -1,0 +1,31 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-annrod-test-flask-deployment
+  labels:
+    app: annrod-test-flask
+    username: ann_rod
+    env: test
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+     app:
+  template:
+    metadata:
+      labels:
+        app: annrod-test-flask
+        username: ann_rod
+        env: test
+    spec:
+      containers:
+        - name: annrod-test-falsk
+          imagePullPolicy: Always
+          image: annrod/app.py:latest
+          env: test
+          - name: FLASK_APP
+            value: "app.py"
+          ports:
+          - name: http
+            containerPort: 5000
