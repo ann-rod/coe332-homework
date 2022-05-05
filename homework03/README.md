@@ -1,4 +1,4 @@
-# homework03
+## Water Turbidity Test
 *Contains my solutions for homework03 assigned in COE 332.*
 
 The code within this directory reads in the file turbidity_data.json, which stores data of collected water samples, and calculates the turbidity of the samples as well as the amount of time it would take for
