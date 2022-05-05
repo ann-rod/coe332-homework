@@ -1,4 +1,4 @@
-# homework02
+## Meteorite Landing Data
 *Contains my solutions for homework02 assigned in COE 332.*
 
 The code within this directory creates randomly generated meteorite landing data and stores it within a .json file. The created .json file is then used
