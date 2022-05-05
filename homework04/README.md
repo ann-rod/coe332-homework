@@ -1,4 +1,4 @@
-# Meteorite Landing Analysis: Homework 04
+# Meteorite Landing Analysis
 *Contains my solutions for homework04 assigned in COE 332.*
 
 The code within this directory writes a summary of calculations made from a meteorite landing data file.
