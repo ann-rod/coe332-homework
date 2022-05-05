@@ -1,4 +1,4 @@
-This directory contains the exercises required for Homework01 in COE 332.
+## Python Test Scripts
 
 The file exercise1.py is a program that creates a list of 10 integers and prints whether each integer is even or odd.
 
